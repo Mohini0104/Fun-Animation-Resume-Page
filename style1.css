@@ -1,0 +1,120 @@
+/* font-family: 'Krona One', sans-serif;
+font-family: 'Red Rose', cursive;
+font-family: 'Roboto Mono', monospace; */
+
+/* Css Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+#container{
+    height: 600px;
+}
+#heading{
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    position: relative;
+    color:white;
+    -webkit-box-reflect: below -6px linear gradient(transparent,rgba(0,0,0,0.6));
+
+}
+#heading span{
+    display: inline-block;
+    position: relative;
+    animation: head 1s ease-in-out infinite;
+    animation-delay: calc(0.09s * var(--i));
+}
+@keyframes head{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+#project{
+    margin-top: 40px;
+   
+    height: 500px;
+    display: flex;
+   
+    
+}
+
+.box{
+    /* border: 2px solid red; */
+    display:flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+    
+    /* color: black;
+    background-color: white; */
+    margin-left: 50px;
+
+    
+
+}
+img{
+    size: 390px;
+    height: 350px;
+}
+#box2, #box4{
+    margin-top: 120px;
+}
+p{
+    display: none;
+}
+
+.box:hover p{
+    display:block ;
+    font-family: 'Red Rose', cursive;
+    line-height: 28px;
+    background-color: black;
+    color: cornsilk;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+   
+   
+    background-color :gray;
+    box-shadow:   0px 0px 5px gray,
+                  0px 0px 5px gray,
+                  0px 0px 5px gray,
+                  0px 0px 5px gray;
+    border: 1px solid  gray;
+    top:0;
+    left: 0;
+    background: linear-gradient(90deg ,transparent,gray);
+    height: 350px;
+    width: 350px;
+    
+}
+.box:hover{
+    background-color :gray;
+    box-shadow:   0px 0px 5px gray,
+                  0px 0px 5px gray,
+                  0px 0px 5px gray,
+                  0px 0px 5px gray;
+    border: 1px solid  gray;
+    top:0;
+    left: 0;
+    background: linear-gradient(90deg ,transparent,gray);
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+   
+    
+} 
+.box:hover img{
+    display: none;
+}

@@ -1,0 +1,205 @@
+/* ---Css reset--- */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+#resume_page{
+    
+    background-color: black;
+    height: 700px;
+}
+
+#main_containerresume{
+   
+    display: flex;
+    color: white;
+    margin-top: 40px;
+    
+     
+}
+.main_box{
+    
+     display:flex;
+     flex-direction: column;
+     height: 550px;
+     width: 500px;
+     
+     border-radius: 10px;
+     background-color :black;
+     box-shadow:   0px 0px 5px gray,
+                   0px 0px 5px gray,
+                   0px 0px 5px gray,
+                   0px 0px 5px gray;
+     border: 1px solid  gray;
+     
+     margin-top: 20px;
+     text-align: center;
+     font-family: 'Red Rose', cursive;
+     
+     /* color: black;
+     background-color: white; */
+     margin-left: 30px;
+}
+#resume_heading{
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    position: relative;
+    color:white;
+    font-family: 'Krona One', sans-serif;
+    -webkit-box-reflect: below -6px linear gradient(transparent,rgba(0,0,0,0.6));
+
+}
+#resume_heading span{
+    display: inline-block;
+    position: relative;
+    animation: resume 1s ease-in-out infinite;
+    animation-delay: calc(0.09s * var(--i));
+}
+@keyframes resume{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+
+.type_animation{
+    animation: type_animation 2s  ease-in-out infinite;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+@keyframes type_animation{
+    0%{
+        width: 0%;
+    }
+    40%{
+        width: 40%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.table_div{
+    margin-top: 40px;
+}
+
+
+  
+  .table{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .table td{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+  }
+  
+  th{
+    border: 1px solid black;
+    padding: 5px;
+   
+  }
+
+  .skills_container{
+      margin-top: 40px;
+      text-align: left;
+      
+  }
+  .skills_known{
+      margin-top: 10px;
+      padding-left: 20px;
+  }
+
+  .line{
+      height: 25px;
+      min-width: 500px;
+      min-width: 500px;
+      margin: 0 auto 10px;
+      line-height: 25px;
+      font-size: 14px;
+      color:green;
+      padding: 0 0 0 10px;
+      position: relative;
+      
+  }
+  .line::before{
+      content: '';
+      width: 85%;
+      position: absolute;
+      left: 0;
+      height: 20px;
+      top: 0;
+      z-index: 1;
+      background: #d2d6d7;
+  }
+
+    
+  .line::after{
+      content: '';
+      background: #333333;
+      width: 85%;
+      transition: 0.8s;
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 20px;
+      top: 0;
+      z-index: 2;
+      animation: line  4s infinite;
+  }
+  #line1::after{
+      max-width: 90%;
+  }
+  #line2::after{
+      max-width: 70%;
+  }
+  #line3::after{
+      max-width: 80%;
+  }
+  #line4::after{
+      max-width: 85%;
+  }
+  #line5::after{
+      max-width: 60%;
+  }
+  #line6::after{
+      max-width: 90%;
+  }
+  @keyframes line{
+      0%{
+          width: 0%;
+      }
+      25%{
+          width: 25%;
+      }
+      75%{
+          width: 75%;
+      }
+      100%{
+          width: 0%;
+      }
+  }
+
+  .hobby_section{
+      margin-top: 40px;
+      text-align: left;
+      padding: 20px;
+  }
+  .hobby_section1{
+      margin-top: 30px;
+    
+  }
+    
